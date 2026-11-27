@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miguel Clark L. Bustillo - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Primary Navigation">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+      <button type="button" id="theme-toggle">Toggle Theme</button>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h1>Miguel Clark L. Bustillo</h1>
+      <p class="tagline">BSIT Student • Caffeine-Powered Tinkerer &amp; Gamer</p>
+      <p>
+        I am your average college student who does almost everything under low sleep and pumped full of coffee. Playing games is a way that I release stress and also gather motivation to do work-related stuff. Tired most of the time yet no idea why, with bursts of motivation often to clear tasks fast.
+      </p>
+      <img src="Photots/ME.jpg" alt="Photo of Miguel Clark L. Bustillo">
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <article>
+        <h3>Pamantasan ng Lungsod ng Maynila</h3>
+        <p>Bachelor of Science in Information Technology (BSIT)</p>
+        <p>2 years attended</p>
+      </article>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div id="skill-filters">
+        <button type="button" data-filter="all">All</button>
+        <button type="button" data-filter="technical">Technical</button>
+        <button type="button" data-filter="soft">Soft Skills</button>
+      </div>
+      <ul id="skills-list">
+        <li data-category="technical">Coding: HTML, CSS, JavaScript, C++, Python</li>
+        <li data-category="technical">Google Docs &amp; Google Sheets (Advanced)</li>
+        <li data-category="technical">Microsoft PowerPoint (Decent)</li>
+        <li data-category="technical">Tinkering small machines (toy cars, remotes)</li>
+        <li data-category="soft">Understanding complex game mechanics</li>
+        <li data-category="soft">Burst-motivation task execution</li>
+      </ul>
+    </section>
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <div id="hobbies-grid">
+        <button
+          type="button"
+          class="hobby-card"
+          data-detail="Mobile Legends, Call of Duty: Mobile, Minecraft, Clash of Clans, Clash Royale, and many more mobile games. Great for unwinding and resetting focus."
+        >
+          Gaming
+        </button>
+        <button
+          type="button"
+          class="hobby-card"
+          data-detail="Taking apart and tinkering with small machines like toy cars and remotes to see how they work."
+        >
+          Small Machine Tinkering
+        </button>
+      </div>
+      <p id="hobby-detail"></p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:mc.bustillo25@gmail.com">mc.bustillo25@gmail.com</a></p>
+      <p>Phone: <a href="tel:+639157898564">0915-789-8564</a></p>
+      <form id="contact-form" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+        <p id="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Miguel Clark L. Bustillo • Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
